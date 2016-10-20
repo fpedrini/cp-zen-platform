@@ -9,7 +9,8 @@
     "postinstall": "cd web && bower install",
     "test": "npm run lint-lib && node_modules/.bin/karma start --single-run",
     "jshint-check": "grunt build",
-    "lint-lib": "./node_modules/.bin/semistandard ./lib/*/*.js"
+    "lint-lib": "./node_modules/.bin/semistandard ./lib/*/*.js",
+    "gulp": "./node_modules/.bin/gulp"
   },
   "pre-commit": [
     "jshint-check",

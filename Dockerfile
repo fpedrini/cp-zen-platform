@@ -12,6 +12,7 @@ COPY lib /usr/src/app/lib/
 COPY web /usr/src/app/web/
 COPY *.js /usr/src/app/
 RUN npm install
+RUN npm run gulp
 
 RUN apk del make gcc g++ python && rm -rf /tmp/* /root/.npm /root/.node-gyp
 
