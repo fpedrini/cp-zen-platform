@@ -10,7 +10,6 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 COPY lib /usr/src/app/lib/
 COPY web /usr/src/app/web/
-COPY tasks /usr/src/app/tasks/
 COPY *.js /usr/src/app/
 RUN npm install
 
